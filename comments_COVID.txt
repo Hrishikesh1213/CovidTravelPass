@@ -1,0 +1,54 @@
+											EmailServlet
+
+/* String sender = "covid19javamail@gmail.com"; 
+String host = "127.0.0.1"; // using host as localhost 
+Properties properties = System.getProperties(); // Getting system properties  
+properties.setProperty("mail.smtp.host", host); // Setting up mail server
+Session ssn = Session.getDefaultInstance(properties); // creating session object to get properties 
+
+try 
+  { 
+     
+     MimeMessage message = new MimeMessage(ssn); 										// MimeMessage object. 
+     message.setFrom(new InternetAddress(sender));  									// Set From Field: adding senders email to from field. 
+     message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient));  	// Set To Field: adding recipient's email to from field. 
+     message.setSubject("This is Suject"); 												// Set Subject: subject of the email 
+     message.setText("This is a test mail");  											// set body of the email. 
+     Transport.send(message); 															// Send email. 
+     out.println("Mail successfully sent"); 
+  } 
+  catch (MessagingException mex)  
+  { 
+     mex.printStackTrace(); 
+  }
+
+out.println("Email has been sent");*/
+
+											ReportDetails
+
+//out.println("<a href="+"EmailServlet.java"+"><button>Email the report</button></a>");
+//out.println("<button onclick="+"request.getRequestDispatcher("+"EmailServlet"+").forward(request, response);"+">Email the report</button>");
+
+//SELECT ?,?,? FROM state_daily WHERE states_daily_status=?
+
+//ps.setString(1,source);//
+//ps.setString(2,destination);//
+//ps.setString(3,"states_daily_date");
+
+/*ResultSetMetaData rsmd = (ResultSetMetaData) rs.getMetaData();
+int columnsNumber = rsmd.getColumnCount();
+while (rs.next()) {
+    for (int i = 1; i <= columnsNumber; i++) {
+        if (i > 1) System.out.print(",  ");
+        String columnValue = rs.getString(i);
+        System.out.print(columnValue + "	" );//+ rsmd.getColumnName(i)
+    }
+    System.out.println("");
+}*/
+
+
+/*for(int i=0;i<size;i++){
+	System.out.println("source:"+source_data.get(i)+"	"+"destination:"+destination_data.get(i)+"	"+"date:"+datetime_data.get(i));
+}*/
+
+
